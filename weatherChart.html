@@ -140,8 +140,12 @@
         Tornado: "bg-calm",
       };
 
-      //  the API
-      const API_KEY = "4df46aff0956084bddee8b055cfdbeb5";
+      // const API_KEY = "672f9ae8e7afee850919bceb3d9b86a3";
+      // script.js
+      fetch(`https://api.example.com/data?api_key=${API_KEY}`)
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
       let currentCity = "Nairobi";
 
       function fetchWeather(cityName) {
